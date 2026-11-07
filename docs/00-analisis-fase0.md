@@ -1,6 +1,7 @@
 # TOM — Análisis de Fase 0
 
 > Estado: **propuesta para revisión de María**. Nada de este documento es definitivo hasta que se apruebe.
+> **Actualización 2026-11-07:** el backend cambió de Cloudflare a Firebase (ver [`decisiones.md`](./decisiones.md) DEC-002 y DEC-003). Las secciones 5, 6 y 10 que mencionan Cloudflare quedan reemplazadas en ese punto.
 > Fecha: 2026-11-07. Las cifras de servicios gratuitos deben volver a verificarse al momento de adoptarlos.
 
 ---

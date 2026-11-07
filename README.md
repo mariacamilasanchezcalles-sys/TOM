@@ -7,3 +7,4 @@ PWA para iPhone, de costo $0, construida por fases.
 
 - [Análisis de Fase 0](docs/00-analisis-fase0.md): requisitos, viabilidad en iOS, arquitectura, riesgos y plan.
 - [Decisiones abiertas y pendientes](docs/pendientes.md)
+- [Registro de decisiones](docs/decisiones.md)

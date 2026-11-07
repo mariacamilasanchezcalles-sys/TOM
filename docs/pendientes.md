@@ -6,14 +6,13 @@
 
 | # | Decisión | Opciones | Recomendación |
 |---|----------|----------|---------------|
-| D1 | Orden de fases | (a) Original: IA en Fase 2 · (b) Servidor + recordatorios antes que IA | **(b)**: ver `00-analisis-fase0.md` §8 |
-| D2 | Dónde viven tus datos | (a) Solo en el teléfono (sin recordatorios con la app cerrada) · (b) Teléfono + copia en Cloudflare | **(b)**, aceptando que Cloudflare custodia los datos |
-| D3 | Crear cuenta gratuita de Cloudflare | Sí / No | Sí, **sin** registrar tarjeta |
-| D4 | Zona horaria / ciudad | — | Necesaria para agenda y recordatorios |
-| D5 | Bloques protegidos iniciales | Horario de sueño, comidas, tiempo libre mínimo | Que los definas tú; no los invento |
+| D3 | Crear proyecto de Firebase (plan Spark, sin tarjeta) | Sí / No | Sí, al empezar la Fase 1 |
 | D6 | Proveedor de IA (Fase 3) | Workers AI gratuito · Claude API (pago medido) · otros | Decidir con una prueba real; descartar niveles gratuitos que usen tus datos para entrenar |
-| D7 | Autenticación | Cloudflare Access · Passkey propia | Probar Access primero |
+| D7 | Método de inicio de sesión (Firebase Auth) | Correo y contraseña · Google · Enlace por correo | Correo y contraseña: es el más fiable dentro de una PWA instalada en iOS. Google con *redirect* debe probarse |
+| D9 | Recordatorios con la app cerrada | A. Blaze con límites · B. Spark + Worker de Cloudflare sin almacenamiento · C. Sin recordatorios | **A**, con tu aprobación para registrar tarjeta (ver DEC-003) |
 | D8 | Escala de importancia y consecuencias | 1–5 · baja/media/alta/crítica | 1–5 con descripciones |
+
+Decisiones ya tomadas: ver [`decisiones.md`](./decisiones.md).
 
 ## Verificaciones pendientes en el iPhone (Fase 1)
 
@@ -23,7 +22,9 @@
 - [ ] `speechSynthesis` con voz en español dentro de la PWA instalada.
 - [ ] `webkitSpeechRecognition` dentro de la PWA instalada (se espera que falle).
 - [ ] Web Push (Fase 2): permiso, llegada con app cerrada, comportamiento con Concentración.
-- [ ] Login de Cloudflare Access dentro de la PWA instalada (Fase 2).
+- [ ] Inicio de sesión de Firebase Auth dentro de la PWA instalada.
+- [ ] Caché offline de Firestore en Safari/PWA: escritura sin conexión y sincronización al reconectar.
+- [ ] Push con FCM en la PWA de iOS (Fase 2).
 
 ## Errores conocidos
 
